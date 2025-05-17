@@ -14,7 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({ sidebarOpen, onSidebarToggle }) => {
 
   return (
     <nav className="w-full border-b border-white/15 bg-[#0A0A0A] ">
-      <div className="w-full max-w-[1440px] mx-auto px-4 lg:px-16 py-4 ">
+      <div className="w-full max-w-[1440px] mx-auto px-4 lg:px-13 py-4 ">
         <div className="flex justify-between items-center w-full">
           {/* Sidebar toggle (mobile) */}
           <button
@@ -29,7 +29,7 @@ const Navbar: React.FC<NavbarProps> = ({ sidebarOpen, onSidebarToggle }) => {
           <div className="flex-1 sm:hidden" />
 
           {/* Desktop content */}
-          <div className="hidden sm:flex items-center flex-wrap gap-3 ml-auto lg:mr-8 ">
+          <div className="hidden sm:flex items-center flex-wrap gap-3 ml-auto  ">
             {/* Search bar */}
             <div className="flex items-center  gap-2 px-3 py-2 rounded-full  border border-white/20 text-white/40 min-w-[300px] md:min-w-[350px] max-w-[350px] flex-grow">
               <Search className="w-5 h-5 shrink-0" />

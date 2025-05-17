@@ -41,10 +41,10 @@ const stats = [
 
 export default function DashboardPage() {
   return (
-    <div className="p-4 sm:p-6 w-full max-w-[1440px] mx-auto">
+    <div className="p-4 sm:p-6 w-full max-w-[1440px] mx-auto ">
 
       {/* Stat Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 ">
         {stats.map((stat) => (
           <div
             key={stat.title}
