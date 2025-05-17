@@ -23,15 +23,14 @@ const StatBar = ({
 )
 
 const ProfileCard = ({
-  rank,
+  
   name,
   profileImg,
   trophyColor,
   questsCompleted,
   kys,
   position,
-  winRate,
-  kda,
+ 
 }: {
   rank: string
   name: string

@@ -29,7 +29,9 @@ const TUBE_WIDTH = 12
 const TUBE_HEIGHT = 105
 const RADIUS = 10
 
-const TubeBar = (props: any) => {
+
+
+const TubeBar = (props:  any) => {
   const { x, y, width, height, value } = props
 
   const bottomY = y + height
