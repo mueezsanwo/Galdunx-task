@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import {
   BarChart,
@@ -27,11 +25,16 @@ const data = [
 const MAX_USERS = 400000
 const TUBE_WIDTH = 12
 const TUBE_HEIGHT = 105
-const RADIUS = 10
 
+interface TubeBarProps {
+  x: number
+  y: number
+  width: number
+  height: number
+  value: number
+}
 
-
-const TubeBar = (props:  any) => {
+const TubeBar = (props: TubeBarProps) => {
   const { x, y, width, height, value } = props
 
   const bottomY = y + height
@@ -93,7 +96,6 @@ const UserGraph = () => {
     <div className="w-full max-w-[566px] max-h-[263px] rounded-[30px] border border-white/15 p-4 bg-transparent text-white/70 flex flex-col">
       <h2 className="text-[13px] font-medium leading-[100%] mt-1 mb-2">Onboarded Users</h2>
 
-      
       <div className="mt-4 h-[200px]">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
@@ -120,7 +122,8 @@ const UserGraph = () => {
             />
             <Bar
               dataKey="users"
-              shape={<TubeBar />}
+              shape={(props: unknown) => <TubeBar {...(props as TubeBarProps)} />}
+
               isAnimationActive={false}
               barSize={TUBE_WIDTH}
             />
