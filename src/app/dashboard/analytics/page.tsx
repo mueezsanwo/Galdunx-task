@@ -42,7 +42,7 @@ const ProfileCard = ({
   winRate: number
   kda: number
 }) => (
-  <div className="border border-white/15 rounded-lg bg-[#0A0A0A] p-4 w-full max-w-xs md:max-w-sm lg:w-[320px] h-auto">
+  <div className="border border-white/15 rounded-lg bg-[#0A0A0A] p-4 w-full max-w-xs md:w-[290px]  xl:w-[270px] 2xl:w-[320px] h-auto ">
     <div className="flex items-center gap-4">
       <img
         src={profileImg}
@@ -84,7 +84,7 @@ export default function AnalyticsPage() {
   return (
     <div className="p-4 md:p-8 text-white font-inter bg-[#0A0A0A] min-h-screen">
       {/* Header Section */}
-      <div className="flex flex-col-reverse md:flex-row md:justify-between items-start md:items-center gap-4 mb-10">
+      <div className="flex flex-col-reverse max-w-[1440px] md:flex-row md:justify-between items-start md:items-center gap-4 mb-10">
           {/* Right side stats toggle */}
         <div className="w-full md:w-[221px] h-[40px] bg-[#0A0A0A] border border-white/8 rounded-[7px]  flex items-center justify-between gap-2">
           <div className="flex-1 h-full bg-[#191919] rounded-[7px] flex items-center justify-center">
@@ -114,11 +114,11 @@ export default function AnalyticsPage() {
       </div>
 
       {/* Main Section */}
-      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex flex-col max-w-[1440px] xl:flex-row gap-8">
         {/* Left Column */}
         <div className="flex flex-col gap-8 w-full xl:w-3/4">
           {/* Top Profile Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <ProfileCard
               rank="1"
               name="Jimmy Boston"
