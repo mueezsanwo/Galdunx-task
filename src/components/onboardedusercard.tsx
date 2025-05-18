@@ -1,4 +1,4 @@
-import { Filter, User } from 'lucide-react';
+import { SlidersHorizontal, User } from 'lucide-react';
 
 const users = [
   {
@@ -33,7 +33,7 @@ export default function OnboardedUsersCard() {
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-[13px] font-medium leading-[100%]">Onboarded Users</h2>
-        <Filter className="text-white opacity-50" size={20} />
+        <SlidersHorizontal className="text-white opacity-80" size={20} />
       </div>
 
       {/* Table Headings - Large Screens */}

@@ -1,4 +1,4 @@
-import { Upload } from "lucide-react";
+import { CloudUpload } from "lucide-react";
 
 export default function MediaCard() {
   return (
@@ -17,7 +17,7 @@ export default function MediaCard() {
             htmlFor="media-upload"
             className="w-full h-[105px] border border-dashed  border-white/15 rounded bg-transparent text-white flex flex-col items-center justify-center cursor-pointer hover:bg-white/5 transition"
           >
-            <Upload className="w-6 h-6 mb-1 text-white" />
+            <CloudUpload className="w-8 h-8 mb-1 text-white" />
             <span className="text-white/50 font-medium text-[13px]">Upload Token Image</span>
             <input id="media-upload" type="file" className="hidden" />
           </label>
